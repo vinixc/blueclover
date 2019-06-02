@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://bluecloverr-api.herokuapp.com'
+  apiUrl: 'https://blueclover-api.herokuapp.com'
 };
 
 
