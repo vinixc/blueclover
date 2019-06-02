@@ -1,0 +1,40 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      BlueEconomic
+    </div>
+
+    <!-- Login Form -->
+
+
+
+    <form autocomplete="off" #f="ngForm">
+    <div class="ui-g-12 ui-fluid">
+      <div class="ui-g-12">
+      <input type="email" name="login" placeholder="login" ngModel required #usuario>
+      </div>
+      <div class="ui-g-12">
+      <input type="password" name="senha" placeholder="Senha" ngModel required #senha>
+      </div>
+      <div class="ui-g-12">
+      <button pButton type="submit" label="Login" [disabled]="!f.valid"
+      (click)="login(usuario.value, senha.value); senha.value= '';"></button>
+      </div>
+      </div>
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Recuperar Senha</a>
+    </div>
+
+  </div>
+</div>
+
